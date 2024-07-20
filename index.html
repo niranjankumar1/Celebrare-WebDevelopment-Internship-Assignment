@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrare Assignment Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <script src="https://kit.fontawesome.com/d7b769ab10.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-page">
+        <div class="action-bar">
+            <button id="undo"><i class="fa-solid fa-rotate-left"></i>  Undo</button>
+            <button id="redo">Redo <i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+        <div class="editing-text">
+            <div id="canvas" class="canvas"></div>
+            <div class="styling-buttons">
+                <div class="fonts">
+                    <label>FONT</label>
+                    <select id="fontSelect">
+                        <option value="Arial">Arial</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="FancyText">Fancy Text</option>
+                        <option value="Italic">Italic</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Arial">Arial</option>
+                    </select>
+                </div>
+                <div class="size-color">
+                    <div class="size">
+                        <label>SIZE</label>
+                        <input type="number" id="fontSize" value="18" min="12" max="60">
+                    </div>
+                    <div class="color">
+                        <label>COLOR</label>
+                        <input type="color" id="fontColor" value="#000000">
+                    </div>
+                </div>
+                <button id="addText">Add Text</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
